@@ -1,1 +1,14 @@
-<van-button type="primary">按钮</van-button>
+<!-- <van-button type="primary">按钮</van-button> -->
+<swiper indicator-dots autoplay style="">
+  <block wx:for="{{banner_images}}" wx:key="item">
+    <swiper-item>
+      <image src="{{item}}" mode=""></image>
+      <!-- <image style="background-color:pink"></image> -->
+    </swiper-item>
+  </block>
+</swiper>
+<scroll-view>
+  <block wx:for="{{book_array}}" wx:key="title">
+    <van-card num="" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.imgurl}}" />
+  </block>
+</scroll-view>

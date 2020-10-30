@@ -1,0 +1,7 @@
+.image_select_book{
+    display:block;
+    height: 300rpx;
+    width: 200rpx;
+    background-color: pink;
+    margin: 0 auto ;
+}

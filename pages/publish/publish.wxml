@@ -1,0 +1,2 @@
+<button bind:tap="select_pic_action">选择图片</button>
+<image class="image_select_book" src="{{select_image_url}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
