@@ -9,6 +9,6 @@
 </swiper>
 <scroll-view>
   <block wx:for="{{book_array}}" wx:key="title">
-    <van-card num="" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.imgurl}}" />
+    <van-card num="" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.imgurl}}" bind:tap="van_card_action"/>
   </block>
 </scroll-view>

@@ -15,6 +15,11 @@ Page({
     {'title':'商品标题','desc':'商品描述','price':'2.00','imgurl':'/images/icon_pink.png'},
     {'title':'商品标题','desc':'商品描述','price':'2.00','imgurl':'/images/icon_pink.png'}]
   },
+  van_card_action(){
+    wx.navigateTo({
+      url: 'book_detail'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
