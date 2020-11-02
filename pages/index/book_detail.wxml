@@ -1,5 +1,5 @@
 <!-- banner -->
-<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+<swiper indicator-dots autoplay>
   <block wx:for="{{imgUrls}}">
     <swiper-item>
       <image src="{{item}}" mode="aspectFit" data-src="{{item}}" bindtap="previewImage"></image>
@@ -8,7 +8,7 @@
 </swiper>
 <scroll-view scroll-y="true">
   <view class="detail">
-    <text class="title">SQ从入门到精通</text>
+    <text class="title">SQL从入门到精通</text>
     <text class="price">￥50</text>
   </view>
   <view class="separate"></view>

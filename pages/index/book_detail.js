@@ -1,17 +1,12 @@
 Page({
   data: {
-    isLike: true,
+    isLike: false,
     // banner
     imgUrls: [
       "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg",
       "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg",
       "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg"
     ],
-    indicatorDots: true, //是否显示面板指示点
-    autoplay: true, //是否自动切换
-    interval: 5000, //自动切换时间间隔,3s
-    duration: 1000, //	滑动动画时长1s
-
     // 商品详情介绍
     detailImg: [
       "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg",
