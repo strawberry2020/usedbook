@@ -3,25 +3,19 @@ Page({
     isLike: true,
     // banner
     imgUrls: [
-      "http://mz.djmall.xmisp.cn/files/product/20161201/148057921620_middle.jpg",
-      "http://mz.djmall.xmisp.cn/files/product/20161201/148057922659_middle.jpg",
-      "http://mz.djmall.xmisp.cn/files/product/20161201/148057923813_middle.jpg",
-      "http://mz.djmall.xmisp.cn/files/product/20161201/148057924965_middle.jpg",
-      "http://mz.djmall.xmisp.cn/files/product/20161201/148057925958_middle.jpg"
+      "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg",
+      "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg",
+      "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg"
     ],
     indicatorDots: true, //是否显示面板指示点
     autoplay: true, //是否自动切换
-    interval: 3000, //自动切换时间间隔,3s
+    interval: 5000, //自动切换时间间隔,3s
     duration: 1000, //	滑动动画时长1s
 
     // 商品详情介绍
     detailImg: [
-      "http://7xnmrr.com1.z0.glb.clouddn.com/detail_1.jpg",
-      "http://7xnmrr.com1.z0.glb.clouddn.com/detail_2.jpg",
-      "http://7xnmrr.com1.z0.glb.clouddn.com/detail_3.jpg",
-      "http://7xnmrr.com1.z0.glb.clouddn.com/detail_4.jpg",
-      "http://7xnmrr.com1.z0.glb.clouddn.com/detail_5.jpg",
-      "http://7xnmrr.com1.z0.glb.clouddn.com/detail_6.jpg",
+      "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg",
+      "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg"
     ],
   },
   //预览图片
@@ -38,12 +32,6 @@ Page({
     this.setData({
       isLike: !this.data.isLike
     });
-  },
-  // 跳到购物车
-  toCar() {
-    wx.switchTab({
-      url: '/pages/cart/cart'
-    })
   },
   // 立即购买
   immeBuy() {

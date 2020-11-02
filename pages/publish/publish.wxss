@@ -1,7 +1,7 @@
 .image_select_book{
     display:block;
-    height: 300rpx;
-    width: 200rpx;
-    background-color: pink;
+    height: 600rpx;
+    width: 500rpx;
+    background-color: #f3f3f3;
     margin: 0 auto ;
 }
