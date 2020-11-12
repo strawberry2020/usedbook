@@ -14,3 +14,9 @@
       </view>
     </block>
   </view>
+
+  <van-cell-group>
+    <van-cell title="我的喜欢" is-link />
+    <van-cell title="我的购物车" is-link />
+</van-cell-group>
+ 

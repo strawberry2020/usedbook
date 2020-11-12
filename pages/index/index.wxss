@@ -1,7 +1,43 @@
+.container{
+  margin: 0 30rpx 0;
+}
 swiper {
-    height: 500rpx;
+    height: 350rpx;
   }
   swiper-item image {
-    width: 100%;
-    height: 100%;
   }
+.middleview{
+  display: flex;
+  justify-content: space-between;
+  margin: 30rpx 0rpx 30rpx;
+}
+.middleview_itemview image{
+  height: 100rpx;
+  width: 100rpx;
+}
+.middleview_itemview{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:center;
+}
+.view_title_text{
+  margin-top: 20rpx;
+  font-size: small;
+}
+.recommandview{
+  display: flex;
+  justify-content: flex-start;
+  height: 100rpx;
+  align-items: center;
+}
+.recommandview_titleview{
+  margin-left: 20rpx;
+  height: 60rpx;
+  background-color: #d5e3b3;
+}
+.recommandview_lineview{
+  width: 10rpx;
+  height: 60rpx;
+  background-color: black;
+}

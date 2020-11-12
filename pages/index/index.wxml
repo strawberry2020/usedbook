@@ -1,13 +1,29 @@
-<!-- <van-button type="primary">按钮</van-button> -->
-<swiper indicator-dots autoplay style="">
-  <block wx:for="{{banner_images}}" wx:key="item">
-    <swiper-item>
-      <image src="{{item}}" mode="aspectFit"></image>
-    </swiper-item>
-  </block>
-</swiper>
-<scroll-view>
-  <block wx:for="{{book_array}}" wx:key="title">
-    <van-card num="" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.imgurl}}" bind:tap="van_card_action"/>
-  </block>
-</scroll-view>
+<view class="container">
+  <!-- <van-button type="primary">按钮</van-button> -->
+  <swiper indicator-dots autoplay style="">
+    <block wx:for="{{banner_images}}" wx:key="item">
+      <swiper-item>
+        <image src="{{item}}" mode="widthFix"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="middleview">
+    <block wx:for="{{middleitems}}" wx:key="title">
+      <view class="middleview_itemview">
+        <image class="" src="{{item.imageurl}}" mode="aspectFill" lazy-load="false" binderror="" bindload=""></image>
+        <view class="view_title_text" hover-class="none" hover-stop-propagation="false">
+          {{item.title}}
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="recommandview">
+    <view class="recommandview_lineview" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="recommandview_titleview">二手书推荐</view>
+  </view>
+  <scroll-view>
+    <block wx:for="{{book_array}}" wx:key="title">
+      <van-card num="" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.imgurl}}" bind:tap="van_card_action" />
+    </block>
+  </scroll-view>
+</view>
