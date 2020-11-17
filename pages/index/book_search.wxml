@@ -1,0 +1,19 @@
+<van-search class="van-search"
+  value="{{ value }}"
+  input-align="center"
+  placeholder="请输入书名"
+  bind:search="onSearch"
+/>
+
+<van-dropdown-menu class="van-dropdown-menu" active-color="#1989fa">
+  <van-dropdown-item value="{{ campus_value }}" options="{{ campus }}" />
+  <van-dropdown-item value="{{ academy_value }}" options="{{ academy }}" />
+  <van-dropdown-item value="{{ grade_value }}" options="{{ grade }}" />
+  <van-dropdown-item value="{{ grade_value }}" options="{{ major }}" />
+</van-dropdown-menu>
+
+<scroll-view scroll-y style="height: {{scrollViewHeight}}px">
+    <block wx:for="{{book_array}}" wx:key="title">
+      <van-card num="" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.imgurl}}" bind:tap="van_card_action" />
+    </block>
+  </scroll-view>

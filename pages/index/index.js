@@ -24,6 +24,11 @@ Page({
       url: 'book_detail'
     })
   },
+  item_select_action(){
+    wx.navigateTo({
+      url: 'book_search'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

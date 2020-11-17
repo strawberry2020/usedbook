@@ -70,6 +70,12 @@
         {
           "name": "pages/index/book_detail",
           "pathName": "pages/index/book_detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/book_search",
+          "pathName": "pages/index/book_search",
           "scene": null
         }
       ]

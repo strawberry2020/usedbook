@@ -9,7 +9,7 @@
   </swiper>
   <view class="middleview">
     <block wx:for="{{middleitems}}" wx:key="title">
-      <view class="middleview_itemview">
+      <view class="middleview_itemview" bind:tap="item_select_action">
         <image class="" src="{{item.imageurl}}" mode="aspectFill" lazy-load="false" binderror="" bindload=""></image>
         <view class="view_title_text" hover-class="none" hover-stop-propagation="false">
           {{item.title}}
