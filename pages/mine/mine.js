@@ -10,6 +10,12 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  login_action(){
+    console.log('login_action');
+    wx.navigateTo({
+      url: 'login'
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

@@ -1,22 +1,25 @@
-<button class="login-button head-height" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-  <view class='head head-height'>
-    <block wx:if="{{!hasUserInfo && canIUse}}">
-      <view class="userinfo">
-        <image class="userinfo-avatar" src="https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=188149577,2949073731&fm=26&gp=0.jpg" mode="cover"></image>
-        <text class="userinfo-nickname">微信授权</text>
-      </view>
-      <button class="login-button head-height" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    </block>
-    <block wx:else>
-      <view class="userinfo">
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      </view>
-    </block>
-  </view>
-
-  <van-cell-group>
-    <van-cell title="我的喜欢" is-link />
-    <van-cell title="我的购物车" is-link />
+<button class="login-button head-height" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+  获取头像昵称
+</button>
+<view class='head head-height'>
+  <block wx:if="{{!hasUserInfo && canIUse}}">
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=188149577,2949073731&fm=26&gp=0.jpg" mode="cover"></image>
+      <!-- <text class="userinfo-nickname">微信授权</text> -->
+      <text bindtap="login_action" class="">立即登录</text>
+    </view>
+    <!-- <button class="login-button head-height" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      获取头像昵称
+    </button> -->
+  </block>
+  <block wx:else>
+    <view class="userinfo">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+  </block>
+</view>
+<van-cell-group>
+  <van-cell title="我的喜欢" is-link />
+  <van-cell title="我的购物车" is-link />
 </van-cell-group>
- 

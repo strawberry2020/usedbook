@@ -1,12 +1,15 @@
 {
   "pages":[
-    "pages/index/index",
     
+    "pages/index/index",
     "pages/publish/publish",
     "pages/message/message",
     "pages/mine/mine",
     "pages/index/book_detail",
-    "pages/index/book_search"
+    "pages/index/book_search",
+    "pages/mine/login",
+    "pages/mine/register"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -46,6 +49,7 @@
     "van-cell-group": "@vant/weapp/cell-group/index",
     "van-search": "@vant/weapp/search/index",
     "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
-    "van-dropdown-item": "@vant/weapp/dropdown-item/index"
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-field": "@vant/weapp/field/index"
   }
 }

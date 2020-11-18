@@ -76,6 +76,12 @@
         {
           "name": "pages/index/book_search",
           "pathName": "pages/index/book_search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/register",
+          "pathName": "pages/mine/register",
           "scene": null
         }
       ]

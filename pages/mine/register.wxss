@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.image_logo{
+    height: 300rpx;
+    width: 400rpx;
+}
+.view_username{
+    display: flex;
+    align-items: center;
+    margin-top: 30rpx;
+    align-self: flex-start;
+    margin-left: 30rpx;
+}
+.view_password{
+    margin-bottom: 60rpx;
+}
+.username_input{
+    height: 80rpx;
+    border: 1rpx solid gray ;
+    border-radius: 15rpx; 
+}
+.view_text{
+    width: 150rpx;
+}
+.van_button button{
+    height: 80rpx;
+    width: 450rpx;
+    border-radius: 30px;  
+    margin-top: 30rpx;
+}
