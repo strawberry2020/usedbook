@@ -14,12 +14,14 @@
   margin-top: 30rpx;
   align-self: flex-start;
   margin-left: 30rpx;
+  width: 100%;
 }
 .view_password{
   margin-bottom: 60rpx;
 }
 .username_input{
   height: 70rpx;
+  width: 60%;
   border: 1rpx solid gray ;
   border-radius: 15rpx; 
 }

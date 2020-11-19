@@ -4,13 +4,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    banner_images:['/images/首页/轮播.png',
-    '/images/首页/轮播.png',
-    '/images/首页/轮播.png'],
-    middleitems:[{'title':"计算机",'imageurl':'/images/首页/计算机.png'},
-    {'title':"电气",'imageurl':'/images/首页/电气.png'},
-    {'title':"会计",'imageurl':'/images/首页/会计.png'},
-    {'title':"更多分类",'imageurl':'/images/首页/更多分类.png'}],
+    banner_images:['/images/icon_banner.png',
+    '/images/icon_banner.png',
+    '/images/icon_banner.png'],
+    middleitems:[{'title':"计算机",'imageurl':'/images/icon_computer.png'},
+    {'title':"电气",'imageurl':'/images/icon_electric.png'},
+    {'title':"会计",'imageurl':'/images/icon_accountant.png'},
+    {'title':"更多分类",'imageurl':'/images/icon_more.png'}],
     imageURL:'/images/icon_pink.png',
     book_array:[{'title':'JAVA从入门到精通','desc':'描述商品描述商品描述商品描述商品描述商述商品描','price':'50.00','imgurl':'https://img13.360buyimg.com/n1/jfs/t1/1732/30/16221/329082/5be1445fEc11a3e8a/10427720782900f5.jpg'},
     {'title':'商品标题','desc':'商品描述描述商品描述','price':'50.00','imgurl':'https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg'},

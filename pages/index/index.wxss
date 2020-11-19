@@ -41,3 +41,6 @@ swiper {
   height: 60rpx;
   background-color: black;
 }
+swiper image{
+  width: 100%;
+}

@@ -34,3 +34,20 @@
     color: #333333;
     font-size: 42rpx;
   }
+
+  .view_van_cell{
+    display: flex;
+    align-items: center;
+  }
+
+  .view_van_cell > image{
+    width: 50rpx;
+    height: 50rpx;
+    margin-left: 10rpx;
+    z-index: 1;
+  }
+
+  .view_van_cell > van-cell{
+    width: 700rpx;
+    margin-left: -20rpx;
+  }

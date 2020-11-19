@@ -20,6 +20,12 @@
   </block>
 </view>
 <van-cell-group>
-  <van-cell title="我的喜欢" is-link />
-  <van-cell title="我的购物车" is-link />
+  <view class="view_van_cell">
+    <image class="" src="/images/icon_publish.png" mode="aspectFill" lazy-load="false" binderror="" bindload=""></image>
+    <van-cell title="我的发布" is-link />
+  </view>
+  <view class="view_van_cell">
+    <image class="" src="/images/icon_collect.png" mode="aspectFill" lazy-load="false" binderror="" bindload=""></image>
+    <van-cell title="我的收藏" is-link />
+  </view>
 </van-cell-group>
