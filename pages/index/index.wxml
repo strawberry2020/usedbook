@@ -23,7 +23,7 @@
   </view>
   <scroll-view>
     <block wx:for="{{book_array}}" wx:key="title">
-      <van-card num="" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{item.imgurl}}" bind:tap="van_card_action" />
+      <van-card num="" price="{{item.price}}" desc="{{item.publisher}}" title="{{item.book_name}}" thumb="https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3312528219,2139515251&fm=26&gp=0.jpg" data-index='{{index}}' bind:tap="van_card_action" />
     </block>
   </scroll-view>
 </view>

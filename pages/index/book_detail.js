@@ -3,15 +3,16 @@ Page({
     isLike: false,
     // banner
     imgUrls: [
-      "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg",
-      "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg",
-      "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg"
+      "https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3312528219,2139515251&fm=26&gp=0.jpg",
+      "https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3312528219,2139515251&fm=26&gp=0.jpg",
+      "https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3312528219,2139515251&fm=26&gp=0.jpg"
     ],
     // 商品详情介绍
     detailImg: [
-      "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg",
-      "https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg"
+      "https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3312528219,2139515251&fm=26&gp=0.jpg",
+      "https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3312528219,2139515251&fm=26&gp=0.jpg"
     ],
+    book_detail:{}
   },
   //预览图片
   previewImage: function (e) {
@@ -36,4 +37,11 @@ Page({
       duration: 2000
     });
   },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    this.setData({book_detail:JSON.parse(options.book_detail)})
+    console.log(JSON.parse(options.book_detail));
+  }
 })

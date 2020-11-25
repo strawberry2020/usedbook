@@ -1,4 +1,6 @@
-// pages/index/book_search.js
+var request = require("../../utils/request.js"); //require引入
+var api = require("../../utils/api.js");
+
 Page({
 
   /**
@@ -37,17 +39,15 @@ Page({
     academy_value: 'a',
     grade_value: 'a',
     major_value: 'a',
-    book_array:[{'title':'JAVA从入门到精通','desc':'描述商品描述商品描述商品描述商品描述商述商品描','price':'50.00','imgurl':'https://img13.360buyimg.com/n1/jfs/t1/1732/30/16221/329082/5be1445fEc11a3e8a/10427720782900f5.jpg'},
-    {'title':'商品标题','desc':'商品描述描述商品描述','price':'50.00','imgurl':'https://img14.360buyimg.com/n1/jfs/t1/86782/9/3173/101135/5ddc9f32E46dab065/623a13b0a1d1bb6b.jpg'},
-    {'title':'商品标题','desc':'商品描述','price':'50.00','imgurl':'https://img13.360buyimg.com/n1/jfs/t1/1732/30/16221/329082/5be1445fEc11a3e8a/10427720782900f5.jpg'},
-    {'title':'商品标题','desc':'商品描述','price':'50.00','imgurl':'https://img13.360buyimg.com/n1/jfs/t1/1732/30/16221/329082/5be1445fEc11a3e8a/10427720782900f5.jpg'},
-    {'title':'商品标题','desc':'商品描述','price':'50.00','imgurl':'https://img13.360buyimg.com/n1/jfs/t1/1732/30/16221/329082/5be1445fEc11a3e8a/10427720782900f5.jpg'},
-    {'title':'商品标题','desc':'商品描述','price':'50.00','imgurl':'https://img13.360buyimg.com/n1/jfs/t1/1732/30/16221/329082/5be1445fEc11a3e8a/10427720782900f5.jpg'}]
-    
+    book_array:[]
   },
 
-  onSearch(){
-    console.log('search');
+  onSearch(res){
+    request.sendGet(api.search_book_name, {'page':'1','bookName':res.detail})
+      .then((res) => {
+        this.setData({book_array:res.data})
+        console.log(res.data);
+      })
   },
 
   /**

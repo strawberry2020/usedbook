@@ -8,8 +8,8 @@
 </swiper>
 <scroll-view scroll-y="true">
   <view class="detail">
-    <text class="title">SQL从入门到精通</text>
-    <text class="price">￥50</text>
+    <text class="title">{{book_detail.book_name}}</text>
+    <text class="price">￥{{book_detail.price}}</text>
   </view>
   <view class="separate"></view>
   <!-- sku选择 -->
