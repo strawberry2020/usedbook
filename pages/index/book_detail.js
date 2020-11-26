@@ -3,14 +3,11 @@ Page({
     isLike: false,
     // banner
     imgUrls: [
-      "https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3312528219,2139515251&fm=26&gp=0.jpg",
-      "https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3312528219,2139515251&fm=26&gp=0.jpg",
-      "https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3312528219,2139515251&fm=26&gp=0.jpg"
+      
     ],
     // 商品详情介绍
     detailImg: [
-      "https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3312528219,2139515251&fm=26&gp=0.jpg",
-      "https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3312528219,2139515251&fm=26&gp=0.jpg"
+      
     ],
     book_detail:{}
   },
@@ -41,7 +38,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({book_detail:JSON.parse(options.book_detail)})
+    
+    let book_detail = JSON.parse(options.book_detail)
+    let images = []
+    images.push(book_detail.photo_url_1)
+    images.push(book_detail.photo_url_2)
+    images.push(book_detail.photo_url_3)
+    this.setData({book_detail,imgUrls:images,detailImg:images})
     console.log(JSON.parse(options.book_detail));
   }
 })

@@ -82,7 +82,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    request.sendGet(api.search_book_name, {'page':'1','bookName':'1'})
+    request.sendGet(api.search_book_name, {'page':'1','bookName':''})
       .then((res) => {
         this.setData({book_array:res.data})
         console.log(res.data);
