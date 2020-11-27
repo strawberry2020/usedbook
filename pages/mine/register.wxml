@@ -5,14 +5,50 @@
         <view class="view_text" selectable="false" space="false" decode="false">
             用户名
         </view>
-        <input class="username_input" type="text"/>
+        <input class="username_input" type="text" bindinput="getUserName"/>
+    </view>
+    <view class="view_username view_phone_number">
+        <view class="view_text" selectable="false" space="false" decode="false">
+            手机号
+        </view>
+        <input class="username_input" name="phone_number" type="text" bindinput="getPhoneNumber"/>
+    </view>
+    <view class="view_username view_school_area">
+        <view class="view_text" selectable="false" space="false" decode="false">
+            校区
+        </view>
+        <picker bindchange="schoolPickerChange" value="{{school_index}}" range="{{school_areas}}">
+            <view class="picker">
+            {{school_areas[school_index]}}
+            </view>
+        </picker>
+    </view>
+    <view class="view_username view_college_area">
+        <view class="view_text" selectable="false" space="false" decode="false">
+            学院
+        </view>
+        <picker bindchange="collegePickerChange" value="{{colleges_index}}" range="{{colleges}}">
+            <view class="picker">
+            {{colleges[colleges_index]}}
+            </view>
+        </picker>
+    </view>
+    <view class="view_username view_grade_area">
+        <view class="view_text" selectable="false" space="false" decode="false">
+            年级
+        </view>
+        <picker bindchange="gradePickerChange" value="{{grades_index}}" range="{{grades}}">
+            <view class="picker">
+            {{grades[grades_index]}}
+            </view>
+        </picker>
     </view>
     <view class="view_username view_password">
         <view class="view_text" selectable="false" space="false" decode="false">
             密码
         </view>
-        <input class="username_input" type="text"/>
+        <input class="username_input" type="text" bindinput="getPassWord"/>
     </view>
-    <van-button class="van_button" type="primary">立即登录</van-button>
-    <van-button class="van_button" type="primary">立即注册</van-button>
+    
+    <van-button class="van_button" type="primary" bindtap="commitRegister">立即注册</van-button>
 </view>

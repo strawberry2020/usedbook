@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo: {},
+    username:"",
+    avatarUrl:"",
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
@@ -38,19 +39,32 @@ Page({
         }
       })
     }
-  },
 
-  getUserInfo: function (e) {
-    this.setUserInfo(e.detail.userInfo);
   },
-
-  setUserInfo: function (userInfo) {
-    if (userInfo != null) {
-      app.globalData.userInfo = userInfo
+  onShow: function () {
+    var pages = getCurrentPages()
+    var currPage = pages[pages.length-1]
+    var localUserInfo = currPage.data.userInfo
+    if(localUserInfo!=undefined) {
       this.setData({
-        userInfo: userInfo,
-        hasUserInfo: true
+        username: localUserInfo.username,
+        avatarUrl: localUserInfo.avatarUrl,
+        hasUserInfo:true
       })
     }
-  }
+    console.log("onshow:"+this.data.username+this.data.avatarUrl)
+  },
+  // getUserInfo: function (e) {
+  //   this.setUserInfo(e.detail.userInfo);
+  // },
+
+  // setUserInfo: function (userInfo) {
+  //   if (userInfo != null) {
+  //     app.globalData.userInfo = userInfo
+  //     this.setData({
+  //       userInfo: userInfo,
+  //       hasUserInfo: true
+  //     })
+  //   }
+  // }
 })

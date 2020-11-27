@@ -3,16 +3,17 @@
     <!-- <text class="" selectable="false" space="false" decode="false">用户登录</text> -->
     <view class="view_username">
         <view class="view_text" selectable="false" space="false" decode="false">
-            用户名
+            手机号
         </view>
-        <input class="username_input" type="text"/>
+        <input class="username_input" name="phone" type="text" bindinput="getPhone"/>
     </view>
     <view class="view_username view_password">
         <view class="view_text" selectable="false" space="false" decode="false">
             密码
         </view>
-        <input class="username_input" type="text"/>
+        <input class="username_input" name="password" type="text" bindinput="getPassWord"/>
     </view>
-    <van-button class="van_button" type="primary">立即登录</van-button>
-    <van-button class="van_button" type="primary">立即注册</van-button>
+    <button class="login_button" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="loginVerify">立即登录</button>
+    <!-- <van-button class="van_button" type="primary" bindtap="loginVerify" open-type="getUserInfo">立即登录</van-button> -->
+    <van-button class="van_button" type="primary" bindtap="toRegister">立即注册</van-button>
 </view>

@@ -34,3 +34,10 @@
   border-radius: 30px;  
   margin-top: 30rpx;
 }
+.login_button{
+  height: 80rpx;
+  width: 450rpx;
+  border-radius: 30px;  
+  margin-top: 30rpx;
+  font-size: 35rpx;
+}
