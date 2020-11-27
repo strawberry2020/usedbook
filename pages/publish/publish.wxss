@@ -2,5 +2,6 @@
     position: fixed;
     left: 200rpx;
     width: 350rpx;
+    height: 90rpx;
     bottom: 60rpx;
 }

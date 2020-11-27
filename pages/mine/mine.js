@@ -5,10 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    username:"",
-    avatarUrl:"",
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    userInfo:{'username':'立即登录'}
   },
   login_action(){
     console.log('login_action');
@@ -34,13 +31,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let that = this
-    request.sendGet(api.find_user, {'phone':'17695564750'})
-      .then((res) => {
-        console.log(res.data);
-        if(res.data.length > 0){
-          that.setData({username:res.data[0].phone_number})
-        }
-      })
+    // let that = this
+    // request.sendGet(api.find_user, {'phone':'17695564750'})
+    //   .then((res) => {
+    //     console.log(res.data);
+    //     if(res.data.length > 0){
+    //       that.setData({username:res.data[0].phone_number})
+    //     }
+    //   })
   }
 })
