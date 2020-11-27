@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    username:'立即登录'
+    username:"",
+    avatarUrl:"",
+    hasUserInfo: false,
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   login_action(){
     console.log('login_action');
@@ -40,5 +43,4 @@ Page({
         }
       })
   }
-
 })

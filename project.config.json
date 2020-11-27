@@ -6,6 +6,7 @@
   "setting": {
     "urlCheck": false,
     "es6": true,
+    "enhance": false,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
@@ -15,9 +16,11 @@
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
+    "uglifyFileName": false,
     "checkInvalidKey": true,
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
     "useMultiFrameRuntime": false,
     "useApiHook": true,
     "babelSetting": {
@@ -25,6 +28,7 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "enableEngineNative": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
@@ -34,7 +38,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.13.2",
-  "appid": "wx76e78f77bc80ed44",
+  "appid": "wx4805271f85205171",
   "projectname": "usedbook",
   "debugOptions": {
     "hidedInDevtools": []

@@ -2,7 +2,6 @@
   获取头像昵称
 </button>
 <view class='head head-height'>
-  <view class="userinfo">
       <image class="userinfo-avatar" src="https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=188149577,2949073731&fm=26&gp=0.jpg" mode="cover"></image>
       <!-- <text class="userinfo-nickname">微信授权</text> -->
       <text bindtap="login_action" class="">{{username}}</text>
