@@ -1,5 +1,6 @@
 var _header = {
   "Content-Type": "application/json"
+  
 }
 //get请求
 function sendGet(url, data = {}) {
@@ -11,12 +12,12 @@ function sendGet(url, data = {}) {
 //post请求
 function sendPost(url, data = {}) {
   var header = this._header = {
-    "Content-Type": "application/x-www-form-urlencoded"
+    'content-type': 'application/x-www-form-urlencoded' //修改此处即可
   }
   return sendRequest(url, data, header, 'POST')
 }
 //网络请求的工具类
-function sendRequest(url, data = {}, header = this._heade, method = 'get') {
+function sendRequest(url, data = {}, header = this._heade, method) {
   console.log("url::" + url + data + header);
   wx.showLoading({
     title: '加载中',

@@ -29,12 +29,7 @@
       "text": "发布",
       "iconPath":"images/首页/发布 (3).png",
       "selectedIconPath":"images/首页/发布 (3选中).png"
-    }, {
-      "pagePath": "pages/message/message",
-      "text": "消息",
-      "iconPath":"images/首页/消息.png",
-      "selectedIconPath":"images/首页/消息选中.png"
-    }, {
+    },  {
       "pagePath": "pages/mine/mine",
       "text": "我的",
       "iconPath":"images/首页/我的.png",
