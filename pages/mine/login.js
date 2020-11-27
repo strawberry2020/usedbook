@@ -5,12 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo: {},
-    hasUserInfo: false,
     username:"",
-    phone:"",
+    phone:"17695564750",
     avatarUrl:"",
-    password:""
+    password:"123456789"
   },
   toRegister: function() {
     wx.navigateTo({

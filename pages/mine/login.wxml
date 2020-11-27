@@ -5,13 +5,13 @@
         <view class="view_text" selectable="false" space="false" decode="false">
             手机号
         </view>
-        <input class="username_input" name="phone" type="text" bindinput="getPhone"/>
+        <input class="username_input" value="{{phone}}" name="phone" type="text" bindinput="getPhone"/>
     </view>
     <view class="view_username view_password">
         <view class="view_text" selectable="false" space="false" decode="false">
             密码
         </view>
-        <input class="username_input" name="password" type="text" bindinput="getPassWord"/>
+        <input class="username_input" value="{{password}}" name="password" type="text" bindinput="getPassWord"/>
 
     </view>
     <button class="login_button" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="loginVerify">立即登录</button>
