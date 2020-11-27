@@ -49,6 +49,12 @@ Page({
         console.log(res.data);
       })
   },
+  van_card_action(res) {
+    wx.navigateTo({
+      url: 'book_detail?book_detail=' + JSON.stringify(this.data.book_array[res.currentTarget.dataset.index])
+    })
+    console.log(res);
+  },
 
   /**
    * 生命周期函数--监听页面加载

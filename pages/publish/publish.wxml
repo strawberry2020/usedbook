@@ -1,2 +1,40 @@
-<button bind:tap="select_pic_action">选择图片</button>
-<image class="image_select_book" src="{{select_image_url}}" mode="aspectFit" lazy-load="false" binderror="" bindload=""></image>
+<van-cell-group>
+  <van-field
+    model:value="{{ book_name }}"
+    label="书名"
+    type="textarea"
+    placeholder="请输入书名"
+    autosize
+    border="{{ false }}"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+    model:value="{{ book_price }}"
+    label="价格"
+    type="textarea"
+    placeholder="请输入价格"
+    autosize
+    border="{{ false }}"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+    model:value="{{ publisher }}"
+    label="出版社"
+    type="textarea"
+    placeholder="请输入出版社"
+    autosize
+    border="{{ false }}"
+  />
+</van-cell-group>
+
+<van-uploader class="van_uploader"
+  file-list="{{ fileList }}"
+  multiple
+  max-count="3"
+  bind:after-read="afterRead"
+  bind:delete="deleteImage"
+/>
+
+<van-button class="van_button" bind:tap="publishClick" type="info">发布</van-button>

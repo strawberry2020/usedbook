@@ -1,57 +1,29 @@
 var request = require("../../utils/request.js"); //require引入
 var api = require("../../utils/api.js");
-
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    banner_images: ['/images/icon_banner.png',
-      '/images/icon_banner.png',
-      '/images/icon_banner.png'
-    ],
-    middleitems: [{
-        'title': "计算机",
-        'imageurl': '/images/icon_computer.png'
-      },
-      {
-        'title': "电气",
-        'imageurl': '/images/icon_electric.png'
-      },
-      {
-        'title': "会计",
-        'imageurl': '/images/icon_accountant.png'
-      },
-      {
-        'title': "更多分类",
-        'imageurl': '/images/icon_more.png'
-      }
-    ],
-    imageURL: '/images/icon_pink.png',
     book_array: [
     ]
   },
-  van_card_action(res) {
-    wx.navigateTo({
-      url: 'book_detail?book_detail=' + JSON.stringify(this.data.book_array[res.currentTarget.dataset.index])
-    })
-    console.log(res);
-  },
-  item_select_action() {
-    wx.navigateTo({
-      url: 'book_search'
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    request.sendGet(api.search_book_name, {'page':'1','bookName':''})
+    request.sendGet(api.search_user_publish, {'page':'1','user':'17695564750'})
       .then((res) => {
         this.setData({book_array:res.data})
-        console.log(res.data);
       })
+  },
+  van_card_action(res) {
+    wx.navigateTo({
+      url: '../index/book_detail?book_detail=' + JSON.stringify(this.data.book_array[res.currentTarget.dataset.index])
+    })
+    console.log(res);
   },
 
   /**

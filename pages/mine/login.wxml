@@ -5,13 +5,13 @@
         <view class="view_text" selectable="false" space="false" decode="false">
             用户名
         </view>
-        <input class="username_input" type="text"/>
+        <input class="username_input" value="17695564750" type="text"/>
     </view>
     <view class="view_username view_password">
         <view class="view_text" selectable="false" space="false" decode="false">
             密码
         </view>
-        <input class="username_input" type="text"/>
+        <input class="username_input" value="123456" type="text"/>
     </view>
     <van-button class="van_button" type="primary">立即登录</van-button>
     <van-button class="van_button" type="primary">立即注册</van-button>

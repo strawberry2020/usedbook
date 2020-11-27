@@ -8,7 +8,9 @@
     "pages/index/book_detail",
     "pages/index/book_search",
     "pages/mine/login",
-    "pages/mine/register"
+    "pages/mine/register",
+    "pages/mine/my_publish",
+    "pages/mine/my_like"
     
   ],
   "window":{
@@ -45,6 +47,7 @@
     "van-search": "@vant/weapp/search/index",
     "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
     "van-dropdown-item": "@vant/weapp/dropdown-item/index",
-    "van-field": "@vant/weapp/field/index"
+    "van-field": "@vant/weapp/field/index",
+    "van-uploader": "@vant/weapp/uploader/index"
   }
 }

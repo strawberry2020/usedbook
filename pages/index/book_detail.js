@@ -1,3 +1,5 @@
+var request = require("../../utils/request.js"); //require引入
+var api = require("../../utils/api.js");
 Page({
   data: {
     isLike: false,
@@ -22,9 +24,27 @@ Page({
   },
   // 收藏
   addLike() {
-    this.setData({
-      isLike: !this.data.isLike
-    });
+    request.sendGet(api.add_like, {'b_id':this.data.book_detail.b_id,'user':'17695564750'})
+      .then((res) => {
+        if (this.data.isLike) {
+          wx.showToast({
+            title: '取消收藏',
+            icon: 'success',
+            duration: 2000
+          });
+        }else{
+          wx.showToast({
+            title: '收藏成功',
+            icon: 'success',
+            duration: 2000
+          });
+        }
+        this.setData({
+          isLike: !this.data.isLike
+        });
+      })
+    
+    
   },
   // 立即购买
   immeBuy() {

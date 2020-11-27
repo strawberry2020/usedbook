@@ -1,0 +1,5 @@
+<scroll-view>
+    <block wx:for="{{book_array}}" wx:key="title">
+      <van-card num="" price="{{item.price}}" desc="{{item.publisher}}" title="{{item.book_name}}" thumb="{{item.photo_url_1}}" data-index='{{index}}' bind:tap="van_card_action" />
+    </block>
+  </scroll-view>

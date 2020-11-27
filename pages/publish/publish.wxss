@@ -1,7 +1,6 @@
-.image_select_book{
-    display:block;
-    height: 600rpx;
-    width: 500rpx;
-    background-color: #f3f3f3;
-    margin: 0 auto ;
+.van_button > button{
+    position: fixed;
+    left: 200rpx;
+    width: 350rpx;
+    bottom: 60rpx;
 }
