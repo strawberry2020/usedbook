@@ -29,8 +29,7 @@ Page({
       }
     ],
     imageURL: '/images/icon_pink.png',
-    book_array: [
-    ]
+    book_array: []
   },
   van_card_action(res) {
     wx.navigateTo({
@@ -43,15 +42,27 @@ Page({
       url: 'book_search'
     })
   },
+
+  getAllBook() {
+    request.sendGet(api.search_book_name, {
+        'page': '1',
+        'bookName': ''
+      })
+      .then((res) => {
+        this.setData({
+          book_array: res.data.reverse()
+        })
+        setTimeout(function () {
+          wx.stopPullDownRefresh()
+        }, 500);
+        console.log(res.data);
+      })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    request.sendGet(api.search_book_name, {'page':'1','bookName':''})
-      .then((res) => {
-        this.setData({book_array:res.data})
-        console.log(res.data);
-      })
+    this.getAllBook()
   },
 
   /**
@@ -86,7 +97,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    this.getAllBook()
   },
 
   /**

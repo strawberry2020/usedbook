@@ -16,7 +16,7 @@ Page({
   onLoad: function (options) {
     request.sendGet(api.search_user_publish, {'page':'1','user':'17695564750'})
       .then((res) => {
-        this.setData({book_array:res.data})
+        this.setData({book_array:res.data.reverse()})
       })
   },
   van_card_action(res) {

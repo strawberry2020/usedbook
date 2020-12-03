@@ -45,7 +45,7 @@ Page({
   onSearch(res){
     request.sendGet(api.search_book_name, {'page':'1','bookName':res.detail})
       .then((res) => {
-        this.setData({book_array:res.data})
+        this.setData({book_array:res.data.reverse()})
         console.log(res.data);
       })
   },
